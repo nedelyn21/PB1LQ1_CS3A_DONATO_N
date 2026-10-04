@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form - 3072</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="sursa.css">
+    <!-- JSEncrypt link -->
+    <script src="https://cdn.jsdelivr.net/npm/jsencrypt@latest/bin/jsencrypt.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enrollment Form</h1>
+        <p class="subtitle"> RSA-1024 and RSA-3072 Encryption </p>
+        <!-- Enrollment Info -->
+        <h2>Enrollment Information</h2>
+
+        <input type="text" id="fullname" placeholder="Full Name">
+        <input type="date" id="birthday">
+        <input type="text" id="yearlevel" placeholder="Year Level">
+        <input type="text" id="gender" placeholder="Gender">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <!-- Encryption Buttons -->
+        <h2>Encryption</h2>
+        <button onclick="encryptRSA1024()">
+            Encrypt RSA-1024</button>
+        <button onclick="encryptRSA3072()">
+            Encrypt RSA-3072 </button>
+
+        <!-- Encrypted Output -->
+        <h2>Encrypted Output</h2>
+        <pre id="encrypted"></pre>
+
+        <!-- Decryption Button -->
+        <button onclick="decryptData()">
+            Decrypt </button>
+        <!-- Decrypted Output -->
+        <h2>Decrypted Output</h2>
+        <pre id="decrypted"></pre>
+        <!-- Status -->
+        <p id="message"></p>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="sursa.js"></script>
+
+</body>
+</html>
